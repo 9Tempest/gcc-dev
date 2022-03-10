@@ -248,6 +248,15 @@ CSTDIO_H = @CSTDIO_H@
 CTIME_CC = @CTIME_CC@
 CTIME_H = @CTIME_H@
 CXX = @CXX@
+CXX+=-lfibre -lrt
+ifneq ($(wildcard /usr/include/liburing.h),)
+CXX+=-luring
+else
+ifneq ($(wildcard /usr/local/include/liburing.h),)
+CXX+=-L/usr/local/lib -Wl,-rpath=/usr/local/lib -luring
+endif
+endif
+CXX+=-L/u9/z277zhu/RA/libfibre/src  -Wl,-rpath=/u9/z277zhu/RA/libfibre/src
 CXXCPP = @CXXCPP@
 CXXFILT = @CXXFILT@
 CXXFLAGS = @CXXFLAGS@
