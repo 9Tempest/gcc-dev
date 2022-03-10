@@ -77945,7 +77945,11 @@ $as_echo "$gxx_include_dir" >&6; }
 # Export all the include and flag information to Makefiles.
 
   # Used for every C++ compile we perform.
+  libfibre_path1="/u9/z277zhu/RA/libfibre/src/libfibre"
+  libfibre_path2="/u9/z277zhu/RA/libfibre/src"
   GLIBCXX_INCLUDES="\
+-I$libfibre_path1 \
+-I$libfibre_path2 \
 -I$glibcxx_builddir/include/$host_alias \
 -I$glibcxx_builddir/include \
 -I$glibcxx_srcdir/libsupc++"
