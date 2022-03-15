@@ -27,6 +27,7 @@
 #include <cwctype>     // For towupper, etc.
 #include <locale>
 #include <ext/concurrence.h>
+#include <cfibre.h>
 
 namespace
 {
@@ -214,8 +215,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   locale::facet::_S_get_c_locale()
   {
 #ifdef __GTHREADS
-    if (__gthread_active_p())
+    if (__gthread_active_p()){
+      cfibre_init();
       __gthread_once(&_S_once, _S_initialize_once);
+
+    }
+      
     else
 #endif
       {
