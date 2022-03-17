@@ -73,7 +73,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   locale::_Impl* 		locale::_S_global;
 
 #ifdef __GTHREADS
-  __gthread_once_t 		locale::_S_once = __GTHREAD_ONCE_INIT;
+  __gthread_once_t 		locale::_S_once = CFIBRE_ONCE_INIT;
 #endif
 
   locale::locale(const locale& __other) throw()

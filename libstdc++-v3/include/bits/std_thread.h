@@ -309,7 +309,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #ifndef _GLIBCXX_HAS_GTHREADS
       return thread::id(1);
 #elif defined _GLIBCXX_NATIVE_THREAD_ID
-      return thread::id(_GLIBCXX_NATIVE_THREAD_ID);
+      return thread::id(__gthread_self());
 #else
       return thread::id(__gthread_self());
 #endif

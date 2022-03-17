@@ -957,20 +957,20 @@
 #undef _GLIBCXX_USE_NLS
 
 /* Define if pthreads_num_processors_np is available in <pthread.h>. */
-#undef _GLIBCXX_USE_PTHREADS_NUM_PROCESSORS_NP
+//#undef _GLIBCXX_USE_PTHREADS_NUM_PROCESSORS_NP
 
 /* Define if pthread_cond_clockwait is available in <pthread.h>. */
-#undef _GLIBCXX_USE_PTHREAD_COND_CLOCKWAIT
+//#undef _GLIBCXX_USE_PTHREAD_COND_CLOCKWAIT
 
 /* Define if pthread_mutex_clocklock is available in <pthread.h>. */
-#undef _GLIBCXX_USE_PTHREAD_MUTEX_CLOCKLOCK
+//#undef _GLIBCXX_USE_PTHREAD_MUTEX_CLOCKLOCK
 
 /* Define if pthread_rwlock_clockrdlock and pthread_rwlock_clockwrlock are
    available in <pthread.h>. */
-#undef _GLIBCXX_USE_PTHREAD_RWLOCK_CLOCKLOCK
+//#undef _GLIBCXX_USE_PTHREAD_RWLOCK_CLOCKLOCK
 
 /* Define if POSIX read/write locks are available in <gthr.h>. */
-#undef _GLIBCXX_USE_PTHREAD_RWLOCK_T
+//#undef _GLIBCXX_USE_PTHREAD_RWLOCK_T
 
 /* Define if /dev/random and /dev/urandom are available for the random_device
    of TR1 (Chapter 5.1). */

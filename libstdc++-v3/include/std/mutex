@@ -267,9 +267,9 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return !__gthread_mutex_timedlock(&_M_mutex, &__ts); }
 
 #if _GLIBCXX_USE_PTHREAD_MUTEX_CLOCKLOCK
-      bool
+      /*bool
       _M_clocklock(clockid_t clockid, const __gthread_time_t& __ts)
-      { return !pthread_mutex_clocklock(&_M_mutex, clockid, &__ts); }
+      { return !pthread_mutex_clocklock(&_M_mutex, clockid, &__ts); }*/
 #endif
   };
 
@@ -333,9 +333,9 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return !__gthread_recursive_mutex_timedlock(&_M_mutex, &__ts); }
 
 #ifdef _GLIBCXX_USE_PTHREAD_MUTEX_CLOCKLOCK
-      bool
+      /*bool
       _M_clocklock(clockid_t clockid, const __gthread_time_t& __ts)
-      { return !pthread_mutex_clocklock(&_M_mutex, clockid, &__ts); }
+      { return !pthread_mutex_clocklock(&_M_mutex, clockid, &__ts); }*/
 #endif
   };
 

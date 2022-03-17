@@ -163,12 +163,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 
 #ifdef _GLIBCXX_USE_PTHREAD_COND_CLOCKWAIT
-    void
+    /*void
     wait_until(mutex& __m, clockid_t __clock, timespec& __abs_time) noexcept
     {
       pthread_cond_clockwait(&_M_cond, __m.native_handle(), __clock,
 			     &__abs_time);
-    }
+    }*/
 #endif
 
     void
